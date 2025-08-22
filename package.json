@@ -6,7 +6,9 @@
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
-    "build": "nest build",
+    "build-server": "tsc --project tsconfig.json",
+    "build-client": "next build client/src",
+    "build": "npm run build-server && npm run build-client",
     "format": "prettier --write \"server/src/**/*.ts\" \"server/test/**/*.ts\"",
     "start": "NODE_ENV=production node server/dist/main",
     "start:dev": "nest start --watch",
@@ -17,9 +19,7 @@
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
-    "test:e2e": "jest --config ./test/jest-e2e.json",
-    "build-server": "tsc --project tsconfig.json",
-    "build-client": "next build client/src"
+    "test:e2e": "jest --config ./test/jest-e2e.json"
   },
   "dependencies": {
     "@nestjs/common": "^10.0.0",
