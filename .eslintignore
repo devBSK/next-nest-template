@@ -1,0 +1,5 @@
+node_modules/
+build/
+client/src/.next
+server/dist
+client/src/public

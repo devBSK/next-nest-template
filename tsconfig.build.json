@@ -1,0 +1,14 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "sourceMap": false
+  },
+  "exclude": [
+    "node_modules",
+    "**/*spec.ts",
+    "node_modules",
+    "server/dist/**/*",
+    "server/test/**/*",
+    "client/**/*"
+  ]
+}

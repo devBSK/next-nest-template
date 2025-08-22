@@ -1,0 +1,53 @@
+# compiled output
+dist
+node_modules
+
+.next
+.env
+.env.*
+*.pem
+*.key
+*.crt
+documentation
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# OS
+.DS_Store
+
+# Tests
+/coverage
+/.nyc_output
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# env Exceptions
+!.env-cmdrc
+
+# It's an out build of /client/src/serice-worker/decrypt-sw.js
+# service worker is build every time when building client or starting a dev server 
+/client/src/public/decrypt-sw.js
+/client/src/public/webviewer
+
+# ESLint cache
+.eslintcache
