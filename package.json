@@ -8,7 +8,7 @@
   "scripts": {
     "build-server": "tsc --project tsconfig.json",
     "build-client": "next build client/src",
-    "build": "npm run build-server && npm run build-client",
+    "vercel-build": "npm run build-server && npm run build-client",
     "format": "prettier --write \"server/src/**/*.ts\" \"server/test/**/*.ts\"",
     "start": "NODE_ENV=production node server/dist/main",
     "start:dev": "nest start --watch",
